@@ -1,0 +1,135 @@
+.analogue {
+
+    position: relative;
+    padding-bottom: 80px;
+   
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        color: #0B0B0B;
+
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        z-index: 6;
+        top: 293px;
+        &_right {
+            position: absolute;
+            right: -35px;
+            cursor: pointer;
+        }
+        &_left {
+            position: absolute;
+            left: -23px;
+            cursor: pointer;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 26px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 460px;
+        column-gap: 20px;
+        
+
+    }
+    &__item {
+        position: relative;
+        border: 1px solid #ECEDEF;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 15px 20px 32px 20px;
+        
+        img {
+            position: relative;
+            display: block;
+            max-width: 245px;
+            margin: 0 auto;
+        }
+
+        // &-sale:before {
+        //     content: '%';
+        //     position: absolute;
+        //     text-align: center;
+        //     color: white;
+        //     display: block;
+        //     width: 26px;
+        //     height: 26px;
+        //     border: 1px solid red;
+        //     background-color: red;
+        //     border-radius: 5px;
+            
+        // }
+    }
+
+    &__descr {
+        font-size: 14px;
+        color: #383838;
+        margin-top: 10px;
+
+    }
+    &__bottom {
+        display: block;
+        position: absolute;
+        bottom: 32px;
+    }
+
+    &__there {
+        font-size: 12px;
+        color: #32A73C;
+        &-not {
+            color: #828282;
+        }
+    }
+    &__price {
+        font-size: 24px;
+        color: #383838;
+        font-weight: bold;
+
+    }
+    &__wholesale {
+        position: relative;
+        display: flex;
+        font-size: 14px;
+        color: #F71412;
+        
+        img {
+            
+            margin-left: 10px;
+        }
+    }
+
+
+    
+    &__btn {
+        width: 245px;
+        height: 45px;
+        margin-top: 22px;
+        background: #FFD637;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        padding: 14px 0;
+        text-transform: uppercase;
+        color: #383838;
+        cursor: pointer;
+        &:hover {
+            background: #FFC237;
+        }
+        &-not {
+            background: #F8F8F8;
+            &:hover {
+                background: #EFEFEF;
+            }
+        }
+
+    }
+
+    
+
+}

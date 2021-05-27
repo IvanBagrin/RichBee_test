@@ -1,0 +1,107 @@
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(78, 76, 76, 0.25);
+    backdrop-filter: blur(2px);
+    z-index: 6;
+    display: none;
+}
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 514px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 70px 49px 60px 40px;
+    display: none;
+    &__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+    }
+    &__subtitle {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #0B0B0B;
+        padding-bottom: 10px;
+    }
+    &__form {
+        label {
+            margin: 20px 0 0 0;
+            font-weight: bold;
+            font-size: 16px;
+            color: #797979;
+            padding: 0;
+            cursor: pointer;
+
+        }
+        input {
+            display: block;
+            width: 511px;
+            height: 54px;
+            background: #F8F8F8;
+            border: 1px solid #B8B8B8;
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin-top: 10px;
+            padding: 12px 30px;
+
+            font-size: 16px;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+
+
+    }
+    &__help {
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: #0B0B0B;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        button {
+            width: 246px;
+            border-radius: 4px;
+            height: 45px;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #383838;
+        }
+        &_entrance {
+            background: #FFD637;
+            &:hover {
+                background: #FFC237;
+            }
+        }
+
+        &_checkin {
+            background: #F8F8F8;
+            &:hover {
+                background: #EFEFEF;
+            }
+        }
+    }
+
+}

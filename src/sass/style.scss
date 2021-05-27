@@ -1,0 +1,37 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+}
+
+
+@import './blocks/header';
+@import './blocks/subheader';
+@import './blocks/submenu';
+@import './blocks/crumbs';
+@import './blocks/product';
+@import './blocks/description';
+@import './blocks/analogue';
+@import './blocks/footer';
+@import './blocks/modal';
+@import './blocks/hoverinfo';
+@import './blocks/menu';
+@import './blocks/sale';
+
+@import './blocks/media';

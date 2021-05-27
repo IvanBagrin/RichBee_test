@@ -1,0 +1,52 @@
+.submenu {
+    position: relative;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 1fr;
+        column-gap: 5px;
+        
+
+        span {
+            margin: 0 auto;
+            height: 55%;
+            width: 1px;
+            background-color: #B8B8B8;
+        }
+    }
+    &__left {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 25px;
+        &-item {
+            list-style-type: none;
+            a {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+
+                color: #383838;
+            }
+        }
+    }
+
+    &__right {
+        display: grid;
+        grid-template-columns: repeat(9, auto);
+        column-gap: 23px;
+
+        &-item {
+            list-style-type: none;
+
+            a {
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+
+                color: #B8B8B8;
+            }
+        }
+    }
+    
+}

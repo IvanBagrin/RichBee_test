@@ -1,0 +1,68 @@
+.footer {
+    min-height: 200px;
+    background: #FFD637;
+    padding-top: 70px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 100px 305px 260px 450px;
+        position: relative;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 32px;
+        color: #383838;
+        line-height: 35px;
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 140%;
+        color: #383838;
+        position: relative;
+    }
+
+    &__subscribe {
+        position: absolute;
+        right: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        &_email {
+            width: 250px;
+            height: 45px;
+            
+            border: 1px solid #383838;
+            box-sizing: border-box;
+            border-radius: 4px;
+
+            font-size: 14px;
+            color: #383838;
+            padding: 14px 19px;
+            background: #FFD637;
+
+        }
+        &_btn {
+            width: 182px;
+            height: 45px;
+
+            background: #383838;
+            border-radius: 4px;
+
+            text-align: center;
+            text-transform: uppercase;
+            border: none;
+
+            color: #FFD637;
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+
+        
+    }
+
+    
+}
